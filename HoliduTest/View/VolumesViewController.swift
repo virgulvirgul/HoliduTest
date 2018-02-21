@@ -16,8 +16,8 @@ class VolumesViewController: UIViewController {
     private var volumes: BehaviorRelay<[Volume]> = BehaviorRelay(value: [])
     private let apiClient = APIClient.sharedInstance
     private var disposeBag = DisposeBag()
-    private let contentView: VolumesView = VolumesView()
     private let searchText = Variable<String?>(nil)
+    private let contentView: VolumesView = VolumesView()
 
     override func loadView() {
         self.view = contentView
@@ -28,6 +28,7 @@ class VolumesViewController: UIViewController {
         
         setCollectionView()
         setSearchView()
+        
     }
 
     // MARK: - Setting collection view to work with data
