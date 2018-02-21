@@ -14,6 +14,11 @@ class VolumesView: UIView {
     
     static let volumeCellId = "volumeCellId"
 
+    let searchBar: UISearchBar = {
+        let bar = UISearchBar()
+        return bar
+    }()
+
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let screenWidth = UIScreen.main.bounds.width
@@ -34,8 +39,11 @@ class VolumesView: UIView {
         
         self.backgroundColor = .white
         
-        self.addSubview(collectionView) { collectionView in
-            collectionView.edges.pinToSuperview()
+        self.addSubview(searchBar, collectionView) { searchBar, collectionView in
+            searchBar.edges(.right, .top, .left).pinToSuperview()
+            searchBar.height.set(44)
+            collectionView.top.align(with: searchBar.bottom)
+            collectionView.edges.pinToSuperview(insets: UIEdgeInsetsMake(44, 0, 0, 0))
         }
     }
     

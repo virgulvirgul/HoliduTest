@@ -17,7 +17,8 @@ class VolumesViewController: UIViewController {
     private let apiClient = APIClient.sharedInstance
     private var disposeBag = DisposeBag()
     private let contentView: VolumesView = VolumesView()
-    
+    private let searchText = Variable<String?>(nil)
+
     override func loadView() {
         self.view = contentView
     }
@@ -26,8 +27,14 @@ class VolumesViewController: UIViewController {
         super.viewDidLoad()
         
         setCollectionView()
-        
-        downloadDataFor("Munich")
+        setSearchView()
+
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
+        self.contentView.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        self.contentView.endEditing(true)
     }
 
     // MARK: - Setting collection view to work with data
@@ -45,9 +52,31 @@ class VolumesViewController: UIViewController {
         }.disposed(by: disposeBag)
     }
     
+    // MARK: - Setting view to search
+    func setSearchView(){
+        contentView.searchBar.delegate = self
+        
+        contentView.searchBar.rx.text
+            .asDriver()
+            .drive(searchText)
+            .disposed(by: disposeBag)
+        
+        searchText.asObservable().skip(1).subscribe(onNext: { [weak self] text in
+            self?.contentView.searchBar.text = text
+        }).disposed(by: disposeBag)
+        
+        searchText.asObservable().skip(1).subscribe(onNext: { [weak self] text in
+            self?.downloadDataFor(text)
+        }).disposed(by: disposeBag)
+    }
+    
     // MARK: - Method to download data
-    func downloadDataFor(_ query: String) {
-        apiClient.getVolumes(query: query).subscribe{ [weak self] event in
+    func downloadDataFor(_ query: String?) {
+        guard let q = query, !q.isEmpty else {
+            self.volumes.accept([])
+            return
+        }
+        apiClient.getVolumes(query: q).subscribe{ [weak self] event in
             switch event {
             case .next(let result):
                 guard !result.isEmpty else {
@@ -57,8 +86,16 @@ class VolumesViewController: UIViewController {
             default:
                 break
             }
-            }.disposed(by: disposeBag)
+        }.disposed(by: disposeBag)
     }
 
+}
+
+extension VolumesViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        contentView.searchBar.resignFirstResponder()
+    }
+    
 }
 
