@@ -28,13 +28,6 @@ class VolumesViewController: UIViewController {
         
         setCollectionView()
         setSearchView()
-
-        let tap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
-        self.contentView.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard() {
-        self.contentView.endEditing(true)
     }
 
     // MARK: - Setting collection view to work with data
@@ -50,12 +43,17 @@ class VolumesViewController: UIViewController {
                 Manager.shared.loadImage(with: url, into: cell.imageView)
             }
         }.disposed(by: disposeBag)
+        contentView.collectionView.rx.didScroll.subscribe(onNext: { [weak self] scroll in
+            self?.contentView.searchBar.resignFirstResponder()
+        }).disposed(by: disposeBag)
+        contentView.collectionView.rx.itemSelected.subscribe(onNext: { [weak self] index in
+            let vc = DetailsViewController(info: self?.volumes.value[index.item].volumeInfo)
+            self?.navigationController?.show(vc, sender: self)
+        }).disposed(by: disposeBag)
     }
     
     // MARK: - Setting view to search
     func setSearchView(){
-        contentView.searchBar.delegate = self
-        
         contentView.searchBar.rx.text
             .asDriver()
             .drive(searchText)
@@ -90,12 +88,3 @@ class VolumesViewController: UIViewController {
     }
 
 }
-
-extension VolumesViewController: UISearchBarDelegate {
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        contentView.searchBar.resignFirstResponder()
-    }
-    
-}
-

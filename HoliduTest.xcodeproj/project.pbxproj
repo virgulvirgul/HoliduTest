@@ -24,6 +24,8 @@
 		71D30544203D87690095E24F /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30543203D87690095E24F /* NetworkConstants.swift */; };
 		71D30546203D88B10095E24F /* VolumesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30545203D88B10095E24F /* VolumesView.swift */; };
 		71D30548203D88B90095E24F /* VolumesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30547203D88B90095E24F /* VolumesViewCell.swift */; };
+		71D3054C203D96F60095E24F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3054B203D96F60095E24F /* DetailsViewController.swift */; };
+		71D3054E203D96FF0095E24F /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3054D203D96FF0095E24F /* DetailsView.swift */; };
 		D149EE1C1D6E477C6EE0EA29 /* Pods_HoliduTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2673E65C760009ACE1815B7C /* Pods_HoliduTest.framework */; };
 		DE746726C91FC65E2DF2F930 /* Pods_HoliduTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3952ADF0559753EDE622847C /* Pods_HoliduTestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		71D30543203D87690095E24F /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		71D30545203D88B10095E24F /* VolumesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumesView.swift; sourceTree = "<group>"; };
 		71D30547203D88B90095E24F /* VolumesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumesViewCell.swift; sourceTree = "<group>"; };
+		71D3054B203D96F60095E24F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		71D3054D203D96FF0095E24F /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		7C9C8FD5A3C952B741D23CA9 /* Pods_HoliduTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoliduTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63D108186F7F7B675DE8F00 /* Pods-HoliduTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoliduTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoliduTestUITests/Pods-HoliduTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BCF458A426114910EBCCE4BC /* Pods-HoliduTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoliduTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoliduTest/Pods-HoliduTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				71D30507203D813D0095E24F /* VolumesViewController.swift */,
 				71D30545203D88B10095E24F /* VolumesView.swift */,
 				71D30547203D88B90095E24F /* VolumesViewCell.swift */,
+				71D3054B203D96F60095E24F /* DetailsViewController.swift */,
+				71D3054D203D96FF0095E24F /* DetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -535,11 +541,13 @@
 				71D30548203D88B90095E24F /* VolumesViewCell.swift in Sources */,
 				71D30542203D86F10095E24F /* VolumesResponse.swift in Sources */,
 				71D30508203D813D0095E24F /* VolumesViewController.swift in Sources */,
+				71D3054E203D96FF0095E24F /* DetailsView.swift in Sources */,
 				71D3053D203D85150095E24F /* VolumeInfo.swift in Sources */,
 				71D30537203D84870095E24F /* API.swift in Sources */,
 				71D30506203D813D0095E24F /* AppDelegate.swift in Sources */,
 				71D30546203D88B10095E24F /* VolumesView.swift in Sources */,
 				71D30539203D849D0095E24F /* APIClient.swift in Sources */,
+				71D3054C203D96F60095E24F /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
