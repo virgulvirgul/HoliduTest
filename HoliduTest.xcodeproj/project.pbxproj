@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CE026FB60F22CDF02FF5DB6 /* Pods_HoliduTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9C8FD5A3C952B741D23CA9 /* Pods_HoliduTestTests.framework */; };
+		71D30506203D813D0095E24F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30505203D813D0095E24F /* AppDelegate.swift */; };
+		71D30508203D813D0095E24F /* VolumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30507203D813D0095E24F /* VolumesViewController.swift */; };
+		71D3050B203D813D0095E24F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D30509203D813D0095E24F /* Main.storyboard */; };
+		71D3050D203D813D0095E24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D3050C203D813D0095E24F /* Assets.xcassets */; };
+		71D30510203D813D0095E24F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D3050E203D813D0095E24F /* LaunchScreen.storyboard */; };
+		71D3051B203D813D0095E24F /* HoliduTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3051A203D813D0095E24F /* HoliduTestTests.swift */; };
+		71D30526203D813D0095E24F /* HoliduTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30525203D813D0095E24F /* HoliduTestUITests.swift */; };
+		71D30537203D84870095E24F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30536203D84870095E24F /* API.swift */; };
+		71D30539203D849D0095E24F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30538203D849D0095E24F /* APIClient.swift */; };
+		71D3053B203D84E40095E24F /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3053A203D84E40095E24F /* Volume.swift */; };
+		71D3053D203D85150095E24F /* VolumeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3053C203D85150095E24F /* VolumeInfo.swift */; };
+		71D3053F203D85430095E24F /* VolumeImageLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3053E203D85430095E24F /* VolumeImageLinks.swift */; };
+		71D30542203D86F10095E24F /* VolumesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30541203D86F10095E24F /* VolumesResponse.swift */; };
+		71D30544203D87690095E24F /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30543203D87690095E24F /* NetworkConstants.swift */; };
+		71D30546203D88B10095E24F /* VolumesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30545203D88B10095E24F /* VolumesView.swift */; };
+		71D30548203D88B90095E24F /* VolumesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D30547203D88B90095E24F /* VolumesViewCell.swift */; };
+		D149EE1C1D6E477C6EE0EA29 /* Pods_HoliduTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2673E65C760009ACE1815B7C /* Pods_HoliduTest.framework */; };
+		DE746726C91FC65E2DF2F930 /* Pods_HoliduTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3952ADF0559753EDE622847C /* Pods_HoliduTestUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71D30517203D813D0095E24F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71D304FA203D813C0095E24F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D30501203D813D0095E24F;
+			remoteInfo = HoliduTest;
+		};
+		71D30522203D813D0095E24F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71D304FA203D813C0095E24F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D30501203D813D0095E24F;
+			remoteInfo = HoliduTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18D30B551FBED92E3D755A9F /* Pods-HoliduTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoliduTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoliduTest/Pods-HoliduTest.debug.xcconfig"; sourceTree = "<group>"; };
+		2673E65C760009ACE1815B7C /* Pods_HoliduTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoliduTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3952ADF0559753EDE622847C /* Pods_HoliduTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoliduTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42113D32096D5203904E6334 /* Pods-HoliduTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoliduTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoliduTestUITests/Pods-HoliduTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		571F64BEC034F8B1C31502E7 /* Pods-HoliduTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoliduTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoliduTestTests/Pods-HoliduTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71D30502203D813D0095E24F /* HoliduTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoliduTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D30505203D813D0095E24F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71D30507203D813D0095E24F /* VolumesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumesViewController.swift; sourceTree = "<group>"; };
+		71D3050A203D813D0095E24F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71D3050C203D813D0095E24F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71D3050F203D813D0095E24F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71D30511203D813D0095E24F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D30516203D813D0095E24F /* HoliduTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoliduTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D3051A203D813D0095E24F /* HoliduTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoliduTestTests.swift; sourceTree = "<group>"; };
+		71D3051C203D813D0095E24F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D30521203D813D0095E24F /* HoliduTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoliduTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D30525203D813D0095E24F /* HoliduTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoliduTestUITests.swift; sourceTree = "<group>"; };
+		71D30527203D813D0095E24F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D30536203D84870095E24F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		71D30538203D849D0095E24F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		71D3053A203D84E40095E24F /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		71D3053C203D85150095E24F /* VolumeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeInfo.swift; sourceTree = "<group>"; };
+		71D3053E203D85430095E24F /* VolumeImageLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeImageLinks.swift; sourceTree = "<group>"; };
+		71D30541203D86F10095E24F /* VolumesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumesResponse.swift; sourceTree = "<group>"; };
+		71D30543203D87690095E24F /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		71D30545203D88B10095E24F /* VolumesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumesView.swift; sourceTree = "<group>"; };
+		71D30547203D88B90095E24F /* VolumesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumesViewCell.swift; sourceTree = "<group>"; };
+		7C9C8FD5A3C952B741D23CA9 /* Pods_HoliduTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoliduTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63D108186F7F7B675DE8F00 /* Pods-HoliduTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoliduTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoliduTestUITests/Pods-HoliduTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BCF458A426114910EBCCE4BC /* Pods-HoliduTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoliduTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoliduTest/Pods-HoliduTest.release.xcconfig"; sourceTree = "<group>"; };
+		E80757206524B82FF7C12DBB /* Pods-HoliduTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoliduTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoliduTestTests/Pods-HoliduTestTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71D304FF203D813D0095E24F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D149EE1C1D6E477C6EE0EA29 /* Pods_HoliduTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D30513203D813D0095E24F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE026FB60F22CDF02FF5DB6 /* Pods_HoliduTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3051E203D813D0095E24F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE746726C91FC65E2DF2F930 /* Pods_HoliduTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		699C92C990DBE8B9800347D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18D30B551FBED92E3D755A9F /* Pods-HoliduTest.debug.xcconfig */,
+				BCF458A426114910EBCCE4BC /* Pods-HoliduTest.release.xcconfig */,
+				571F64BEC034F8B1C31502E7 /* Pods-HoliduTestTests.debug.xcconfig */,
+				E80757206524B82FF7C12DBB /* Pods-HoliduTestTests.release.xcconfig */,
+				42113D32096D5203904E6334 /* Pods-HoliduTestUITests.debug.xcconfig */,
+				B63D108186F7F7B675DE8F00 /* Pods-HoliduTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71D304F9203D813C0095E24F = {
+			isa = PBXGroup;
+			children = (
+				71D30504203D813D0095E24F /* HoliduTest */,
+				71D30519203D813D0095E24F /* HoliduTestTests */,
+				71D30524203D813D0095E24F /* HoliduTestUITests */,
+				71D30503203D813D0095E24F /* Products */,
+				699C92C990DBE8B9800347D2 /* Pods */,
+				C1165801EF1FB4EF5F7CC7A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		71D30503203D813D0095E24F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71D30502203D813D0095E24F /* HoliduTest.app */,
+				71D30516203D813D0095E24F /* HoliduTestTests.xctest */,
+				71D30521203D813D0095E24F /* HoliduTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71D30504203D813D0095E24F /* HoliduTest */ = {
+			isa = PBXGroup;
+			children = (
+				71D30535203D82EF0095E24F /* View */,
+				71D30534203D82E50095E24F /* Model */,
+				71D30533203D82DE0095E24F /* Network */,
+				71D30505203D813D0095E24F /* AppDelegate.swift */,
+				71D30509203D813D0095E24F /* Main.storyboard */,
+				71D3050C203D813D0095E24F /* Assets.xcassets */,
+				71D3050E203D813D0095E24F /* LaunchScreen.storyboard */,
+				71D30511203D813D0095E24F /* Info.plist */,
+			);
+			path = HoliduTest;
+			sourceTree = "<group>";
+		};
+		71D30519203D813D0095E24F /* HoliduTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				71D3051A203D813D0095E24F /* HoliduTestTests.swift */,
+				71D3051C203D813D0095E24F /* Info.plist */,
+			);
+			path = HoliduTestTests;
+			sourceTree = "<group>";
+		};
+		71D30524203D813D0095E24F /* HoliduTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71D30525203D813D0095E24F /* HoliduTestUITests.swift */,
+				71D30527203D813D0095E24F /* Info.plist */,
+			);
+			path = HoliduTestUITests;
+			sourceTree = "<group>";
+		};
+		71D30533203D82DE0095E24F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				71D30540203D86910095E24F /* Response */,
+				71D30536203D84870095E24F /* API.swift */,
+				71D30538203D849D0095E24F /* APIClient.swift */,
+				71D30543203D87690095E24F /* NetworkConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		71D30534203D82E50095E24F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71D3053A203D84E40095E24F /* Volume.swift */,
+				71D3053C203D85150095E24F /* VolumeInfo.swift */,
+				71D3053E203D85430095E24F /* VolumeImageLinks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71D30535203D82EF0095E24F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71D30507203D813D0095E24F /* VolumesViewController.swift */,
+				71D30545203D88B10095E24F /* VolumesView.swift */,
+				71D30547203D88B90095E24F /* VolumesViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71D30540203D86910095E24F /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				71D30541203D86F10095E24F /* VolumesResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C1165801EF1FB4EF5F7CC7A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2673E65C760009ACE1815B7C /* Pods_HoliduTest.framework */,
+				7C9C8FD5A3C952B741D23CA9 /* Pods_HoliduTestTests.framework */,
+				3952ADF0559753EDE622847C /* Pods_HoliduTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71D30501203D813D0095E24F /* HoliduTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D3052A203D813D0095E24F /* Build configuration list for PBXNativeTarget "HoliduTest" */;
+			buildPhases = (
+				DDE65A4443444DB134CED09D /* [CP] Check Pods Manifest.lock */,
+				71D304FE203D813D0095E24F /* Sources */,
+				71D304FF203D813D0095E24F /* Frameworks */,
+				71D30500203D813D0095E24F /* Resources */,
+				BB1D86E37E1E983698F79E36 /* [CP] Embed Pods Frameworks */,
+				12FC907572A8FA961855C4FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoliduTest;
+			productName = HoliduTest;
+			productReference = 71D30502203D813D0095E24F /* HoliduTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D30515203D813D0095E24F /* HoliduTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D3052D203D813D0095E24F /* Build configuration list for PBXNativeTarget "HoliduTestTests" */;
+			buildPhases = (
+				A45C2580E9FD5565014AC0E2 /* [CP] Check Pods Manifest.lock */,
+				71D30512203D813D0095E24F /* Sources */,
+				71D30513203D813D0095E24F /* Frameworks */,
+				71D30514203D813D0095E24F /* Resources */,
+				1FA54A2AD244F1135DB8F089 /* [CP] Embed Pods Frameworks */,
+				A4AFE780EEBD75C7144081CC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71D30518203D813D0095E24F /* PBXTargetDependency */,
+			);
+			name = HoliduTestTests;
+			productName = HoliduTestTests;
+			productReference = 71D30516203D813D0095E24F /* HoliduTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71D30520203D813D0095E24F /* HoliduTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D30530203D813D0095E24F /* Build configuration list for PBXNativeTarget "HoliduTestUITests" */;
+			buildPhases = (
+				E7C37064DE61C6FA7FB1206C /* [CP] Check Pods Manifest.lock */,
+				71D3051D203D813D0095E24F /* Sources */,
+				71D3051E203D813D0095E24F /* Frameworks */,
+				71D3051F203D813D0095E24F /* Resources */,
+				BD0FD732CEF1DA2D813B90B1 /* [CP] Embed Pods Frameworks */,
+				259737B4CBC116EA5C93058B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71D30523203D813D0095E24F /* PBXTargetDependency */,
+			);
+			name = HoliduTestUITests;
+			productName = HoliduTestUITests;
+			productReference = 71D30521203D813D0095E24F /* HoliduTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71D304FA203D813C0095E24F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jaleel Akbashev";
+				TargetAttributes = {
+					71D30501203D813D0095E24F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					71D30515203D813D0095E24F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71D30501203D813D0095E24F;
+					};
+					71D30520203D813D0095E24F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71D30501203D813D0095E24F;
+					};
+				};
+			};
+			buildConfigurationList = 71D304FD203D813C0095E24F /* Build configuration list for PBXProject "HoliduTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71D304F9203D813C0095E24F;
+			productRefGroup = 71D30503203D813D0095E24F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71D30501203D813D0095E24F /* HoliduTest */,
+				71D30515203D813D0095E24F /* HoliduTestTests */,
+				71D30520203D813D0095E24F /* HoliduTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71D30500203D813D0095E24F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D30510203D813D0095E24F /* LaunchScreen.storyboard in Resources */,
+				71D3050D203D813D0095E24F /* Assets.xcassets in Resources */,
+				71D3050B203D813D0095E24F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D30514203D813D0095E24F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3051F203D813D0095E24F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12FC907572A8FA961855C4FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoliduTest/Pods-HoliduTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FA54A2AD244F1135DB8F089 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoliduTestTests/Pods-HoliduTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		259737B4CBC116EA5C93058B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoliduTestUITests/Pods-HoliduTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A45C2580E9FD5565014AC0E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoliduTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4AFE780EEBD75C7144081CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoliduTestTests/Pods-HoliduTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB1D86E37E1E983698F79E36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HoliduTest/Pods-HoliduTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Yalta/Yalta.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Yalta.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoliduTest/Pods-HoliduTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD0FD732CEF1DA2D813B90B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoliduTestUITests/Pods-HoliduTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE65A4443444DB134CED09D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoliduTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7C37064DE61C6FA7FB1206C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoliduTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71D304FE203D813D0095E24F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D30544203D87690095E24F /* NetworkConstants.swift in Sources */,
+				71D3053F203D85430095E24F /* VolumeImageLinks.swift in Sources */,
+				71D3053B203D84E40095E24F /* Volume.swift in Sources */,
+				71D30548203D88B90095E24F /* VolumesViewCell.swift in Sources */,
+				71D30542203D86F10095E24F /* VolumesResponse.swift in Sources */,
+				71D30508203D813D0095E24F /* VolumesViewController.swift in Sources */,
+				71D3053D203D85150095E24F /* VolumeInfo.swift in Sources */,
+				71D30537203D84870095E24F /* API.swift in Sources */,
+				71D30506203D813D0095E24F /* AppDelegate.swift in Sources */,
+				71D30546203D88B10095E24F /* VolumesView.swift in Sources */,
+				71D30539203D849D0095E24F /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D30512203D813D0095E24F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D3051B203D813D0095E24F /* HoliduTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3051D203D813D0095E24F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D30526203D813D0095E24F /* HoliduTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71D30518203D813D0095E24F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71D30501203D813D0095E24F /* HoliduTest */;
+			targetProxy = 71D30517203D813D0095E24F /* PBXContainerItemProxy */;
+		};
+		71D30523203D813D0095E24F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71D30501203D813D0095E24F /* HoliduTest */;
+			targetProxy = 71D30522203D813D0095E24F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71D30509203D813D0095E24F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D3050A203D813D0095E24F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71D3050E203D813D0095E24F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D3050F203D813D0095E24F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71D30528203D813D0095E24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71D30529203D813D0095E24F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71D3052B203D813D0095E24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D30B551FBED92E3D755A9F /* Pods-HoliduTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G9QJ9825A;
+				INFOPLIST_FILE = HoliduTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbashev.HoliduTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D3052C203D813D0095E24F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF458A426114910EBCCE4BC /* Pods-HoliduTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G9QJ9825A;
+				INFOPLIST_FILE = HoliduTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbashev.HoliduTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D3052E203D813D0095E24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571F64BEC034F8B1C31502E7 /* Pods-HoliduTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HoliduTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbashev.HoliduTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoliduTest.app/HoliduTest";
+			};
+			name = Debug;
+		};
+		71D3052F203D813D0095E24F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E80757206524B82FF7C12DBB /* Pods-HoliduTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HoliduTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbashev.HoliduTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoliduTest.app/HoliduTest";
+			};
+			name = Release;
+		};
+		71D30531203D813D0095E24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42113D32096D5203904E6334 /* Pods-HoliduTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HoliduTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbashev.HoliduTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoliduTest;
+			};
+			name = Debug;
+		};
+		71D30532203D813D0095E24F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63D108186F7F7B675DE8F00 /* Pods-HoliduTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HoliduTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbashev.HoliduTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoliduTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71D304FD203D813C0095E24F /* Build configuration list for PBXProject "HoliduTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D30528203D813D0095E24F /* Debug */,
+				71D30529203D813D0095E24F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D3052A203D813D0095E24F /* Build configuration list for PBXNativeTarget "HoliduTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D3052B203D813D0095E24F /* Debug */,
+				71D3052C203D813D0095E24F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D3052D203D813D0095E24F /* Build configuration list for PBXNativeTarget "HoliduTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D3052E203D813D0095E24F /* Debug */,
+				71D3052F203D813D0095E24F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D30530203D813D0095E24F /* Build configuration list for PBXNativeTarget "HoliduTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D30531203D813D0095E24F /* Debug */,
+				71D30532203D813D0095E24F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71D304FA203D813C0095E24F /* Project object */;
+}
